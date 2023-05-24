@@ -1,0 +1,29 @@
+GET http://127.0.0.1:3001/books HTTP/1.1
+Content-Type: application/json
+
+
+###
+POST http://localhost:3001/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Rahul"
+}
+
+###
+PUT http://127.0.0.1:3001/books/2 HTTP/1.1
+Content-Type: application/json
+
+
+{
+    "title": "Lovely"
+}
+
+###
+GET http://127.0.0.1:3001/books HTTP/1.1
+Content-Type: application/json
+
+###
+DELETE http://127.0.0.1:3001/books/3 HTTP/1.1
+Content-Type: application/json
+
