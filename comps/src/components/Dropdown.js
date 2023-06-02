@@ -8,6 +8,9 @@ function Dropdown({options, selection, onHandleClick}){
 
   useEffect(() => {
     const handler = (event) => {
+        if (!divEl.current) {
+            return;
+          }
       if(!divEl.current.contains(event.target)){
         setDropDown(false);
       }

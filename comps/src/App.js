@@ -1,14 +1,22 @@
-import Dropdown from "./components/Dropdown";
-import { useState } from "react";   
+import Link from "./components/link";
+import Route from "./components/route";
 
+import AccordionPage from "./pages/AccordionPage";
+import DropdownPage from "./pages/DropdownPage";
+import ButtonPage from "./pages/ButtonPage";
 function App(){
-    const [selection, updateSelect] = useState(undefined);
-    const options = [
-        {label: 'Red', value: 'red'},
-        {label: 'Yellow', value: 'yellow'},
-        {label: 'Blue', value: 'blue'},
-    ];
-    return <Dropdown options = {options} selection = {selection} onHandleClick = {updateSelect}/>;
+    return (<div>
+        <Link to='accordion'>Go to Accordion</Link>
+        <Link to='dropdown'>Go to drop</Link>
+        <div>
+            <Route path='/accordion'>
+                <AccordionPage/>
+            </Route>
+            <Route path='/dropdown'>
+                <DropdownPage/>
+            </Route>
+        </div>
+    </div>);
 }
 
 export default App;

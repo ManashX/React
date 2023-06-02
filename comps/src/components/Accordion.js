@@ -3,7 +3,7 @@ import { GoChevronDown, GoChevronUp } from "react-icons/go";
 function Accordion({items}){
     const [expandedIndex, setExpandedIndex] = useState(-1);
     const handleClick = (nextIndex)=>{
-        if(expandedIndex == nextIndex){
+        if(expandedIndex === nextIndex){
             setExpandedIndex(-1);
         }
         else{
