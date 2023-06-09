@@ -1,17 +1,24 @@
 import { useContext } from "react";
 import NavigationContext from "../context/navigation";
+import classNames from "classnames";
+function Link({to, children, className}){
+    const {navigate , currentPath} = useContext(NavigationContext);
 
-
-function Link({to, children}){
-    const {navigate} = useContext(NavigationContext);
-    //1. to is going to be the path that we're going to navigate to whenever a user clicks on this thing.
-    //2. Children is going to be some text that we want to show inside of the anchor element.
-    //3. the entire goal of the link function is to make sure that clicking on an anchor element does not trigger a total page refresh.
+    // Whenever we show our link component, we're going to allow other developers to give us a class name prop
+    const classes = classNames('text-blue-500',
+        className
+        // So now whenever some other developer uses our link component, they can easily add in some additional class name prop
+    );
     const handleClick = (event) =>{
+
+        if(event.ctrlKey || event.metaKey){
+
+            //Instead, we want to allow the browser to handle the navigation event as usual and attempt to open up a new tab
+            return;
+        }
         event.preventDefault();
         navigate(to);
     }
-    //we created a function to allow us developers to programmatically navigate around the application.
-    return <a onClick={handleClick} >{children}</a>;
+    return <a className={classes} href={to} onClick={handleClick} >{children}</a>;
 }
 export default Link;
