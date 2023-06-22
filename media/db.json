@@ -1,5 +1,42 @@
 {
-    "users": [],
-    "albums": [],
-    "photos": []
+  "users": [
+    {
+      "id": 1,
+      "name": "Myra"
+    },
+    {
+      "name": "Gerald Hegmann",
+      "id": 2
+    },
+    {
+      "name": "Penny Skiles",
+      "id": 3
+    },
+    {
+      "name": "Erma Mertz",
+      "id": 4
+    },
+    {
+      "name": "Whitney Beahan",
+      "id": 5
+    },
+    {
+      "name": "Nora Robel",
+      "id": 6
+    },
+    {
+      "name": "Angelo Luettgen",
+      "id": 7
+    },
+    {
+      "name": "Jodi Hammes",
+      "id": 8
+    },
+    {
+      "name": "Judy Bogan",
+      "id": 9
+    }
+  ],
+  "albums": [],
+  "photos": []
 }
