@@ -11,3 +11,4 @@ export const store = configureStore({
 // The syntax right here just means find everything that gets exported from this file and export it from the index case file as well.
 export * from './thunks/fetchUsers';
 export * from './thunks/addUser';
+export * from './thunks/deleteUser';
