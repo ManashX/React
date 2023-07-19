@@ -1,6 +1,6 @@
 import { useEffect} from "react";
 import {useSelector} from "react-redux";
-import { fetchUsers, addUser, deleteUser} from "../store";
+import { fetchUsers, addUser} from "../store";
 import Button from "./Button";
 import Skeleton from "./skeleton";
 import { useThunk } from "../hooks/useThunk";
@@ -14,7 +14,7 @@ function UserList(){
     const [doCreateUsers, isCreatingUser, isCreatingUserError] = useThunk(addUser);
     useEffect(() =>{
         doFetchUsers();
-    },[]);
+    },[doFetchUsers]);
 
 
   const handleUserAdd = () => {

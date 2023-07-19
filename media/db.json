@@ -1,22 +1,6 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Myra"
-    },
-    {
-      "name": "Gerald Hegmann",
-      "id": 2
-    },
-    {
-      "name": "Penny Skiles",
-      "id": 3
-    },
-    {
-      "name": "Erma Mertz",
-      "id": 4
-    },
-    {
       "name": "Whitney Beahan",
       "id": 5
     },
@@ -25,20 +9,16 @@
       "id": 6
     },
     {
-      "name": "Angelo Luettgen",
-      "id": 7
-    },
-    {
-      "name": "Jodi Hammes",
-      "id": 8
-    },
-    {
       "name": "Judy Bogan",
       "id": 9
     },
     {
-      "name": "Dr. James Balistreri",
-      "id": 10
+      "name": "Vera Sanford",
+      "id": 12
+    },
+    {
+      "name": "Randolph Walker III",
+      "id": 13
     }
   ],
   "albums": [],
